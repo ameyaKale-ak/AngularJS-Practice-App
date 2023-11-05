@@ -1,0 +1,97 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <my-directive data2="data2" title="'This is the title in the directive'">
+    <h2>This is my own directive</h2>
+</my-directive> -->
+
+<div ng-include="'../views/slideshow.html'"></div>
+<section id="product">
+
+    <div class="midOffers bd-grid">
+        <img src="../img/beforemusthave1.png" alt="">
+        <div class="mid__container">
+            <img src="../img/beforemusthave2.png" alt="">
+            <img src="../img/beforemusthave2.png" alt="">
+        </div>
+    </div>
+
+    <div class="deals bd-grid">
+            <h3>Top Deals on your favourite phone!</h3>    
+            <p id="linebar"></p>
+        </div>
+
+        <div class="deals__container">
+           
+                <div class="deal-item" ng-repeat="data in data2">
+                    <img ng-src="{{data.img}}" alt="phone1">
+                    <i class="fa fa-heart"></i>
+                    <h4>{{data.productName}}</h4>
+                    <p>{{data.productDescription}}</p>
+                    <span id="offDeal">{{data.discount}}</span>
+                    <span><strike>{{data.newPrice}}</strike></span>
+                    <h5>{{data.oldPrice}}</h5>
+                   <button class="deal--btn">Add to Cart</button>
+                </div>
+
+    </div>
+
+
+    <div class="deals bd-grid">
+        <h3>Must have Huawei Accessories</h3>    
+        <p id="linebar"></p>
+    </div>
+
+    <div class="deals__container">
+
+            <div class="deal-item" ng-repeat="data in data1">
+                <img ng-src="{{data.img}}" alt="phone1">
+                <i class="fa fa-heart"></i>
+                <h4>{{data.productName}}</h4>
+                <p>{{data.productDescription}}</p>
+                <span id="offDeal">{{data.discount}}</span>
+                <span><strike>{{data.newPrice}}</strike></span>
+                <h5>{{data.oldPrice}}</h5>
+               <button class="deal--btn">Add to Cart</button>
+            </div>
+
+</div>
+
+<div class="midOffers bd-grid">
+    <img src="../img/beforemusthave1.png" alt="">
+    <div class="mid__container">
+
+    </div>
+</div>
+
+<div class="deals bd-grid">
+    <h3>Best Of Accessories</h3>    
+    <p id="linebar"></p>
+</div>
+
+<div class="deals__container">
+
+    <div class="deal-item" ng-repeat="data in data1">
+        <img ng-src="{{data.img}}" alt="phone1">
+        <i class="fa fa-heart"></i>
+        <h4>{{data.productName}}</h4>
+        <p>{{data.productDescription}}</p>
+        <span id="offDeal">{{data.discount}}</span>
+        <span><strike>{{data.newPrice}}</strike></span>
+        <h5>{{data.oldPrice}}</h5>
+       <button class="deal--btn">Add to Cart</button>
+    </div>
+
+</section>
